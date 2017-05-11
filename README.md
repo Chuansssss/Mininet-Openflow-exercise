@@ -13,19 +13,19 @@ The SDN is defined and built in the Mininet Linux system, which is included in t
 2.of_tutorial._resend.py act_like_switch code file, implements resend to send the packet, saved in folder /pox/pox/misc
 
 Run:
-	1. In a mininet terminal run the following command
+1. In a mininet terminal run the following command
 	
     	   sudo mn --topo single,3 --mac --switch ovsk --controller remote
 	   
-	2.In another mininet terminal run the following command
+2.In another mininet terminal run the following command
 	
-	   	cd pox
-           	./pox.py log.level --DEBUG misc.of_tutorial_flow_mod
+	   cd pox
+           ./pox.py log.level --DEBUG misc.of_tutorial_flow_mod
 		
-	  Or
+Or
 
-           	cd pox
-           	./pox.py log.level --DEBUG misc.of_tutorial_resend
+           cd pox
+           ./pox.py log.level --DEBUG misc.of_tutorial_resend
 
 
 ## Act like a router in simple topology
@@ -37,17 +37,17 @@ Run:
 3.topo1.py, the topology file of this exercise, saved in folder ~/mininet/custom.
 
 Run:
-	1. In a mininet terminal run the following command
+1. In a mininet terminal run the following command
 	
 		cd ~/mininet/custom
 		sudo mn --custom topo1.py --topo mytopo --mac
 
-	2.In another mininet terminal run the following command
+2.In another mininet terminal run the following command
 	
 		cd pox
     		./pox.py log.level --DEBUG part1_flow_mod misc.full_payload
 
-       Or
+Or
 
     		cd pox
     		./pox.py log.level --DEBUG misc.part1_pkt_out misc.full_payload
